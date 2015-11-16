@@ -19,9 +19,10 @@
 Author#name uniqueness
 Author#phone_number format (matches 9 numbers)
 Post#title present
-Post#content minimum 250
+Post#content minimum 250, custom error message
 Post#summary maximum 250
 Post#category within ["Fiction", "Non Fiction"]
+(what other custom validation options like :on or :if can we flex here?)
 
 Clickbait#title present
 Clickbait#content maximum 500
