@@ -1,32 +1,19 @@
 # ActiveRecord Validations Lab
 
-## Objectives
+# Basic Validations
 
-- Apply a validation requirement using validates macro
-- Identify when validation occurs in the lifespan of an object
-- Introspect on the ActiveRecord::Errors collection object on an AR instance
-  - use valid?
-  - use errors
-- Generate full_messages for errors
-- Check an attribute for validation errors
-- common validation macros
-  - scope on uniqueness
-  - validation configuration options
-- Add a custom validation error to an AR model
+Add validations to these models such that...
 
-## Notes
+1. All authors have a name
+1. No two authors have the same name
+1. Author phone numbers are exactly ten digits
+1. All posts have a title
+1. Post content is at least 250 characters long
+1. Post summary is a maximum of 250 characters
+1. Post category is either `Fiction` or `Non-Fiction`
 
-Author#name uniqueness
-Author#phone_number format (matches 9 numbers)
-Post#title present
-Post#content minimum 250, custom error message
-Post#summary maximum 250
-Post#category within ["Fiction", "Non Fiction"]
-(what other custom validation options like :on or :if can we flex here?)
+# Custom Validations
 
-Clickbait#title present
-Clickbait#content maximum 500
-Clickbait#clickbait? validates :title, :clickbate, custom validation
-  - must include "Top X", "Guess", "Believe", "Secret", or some clickbait algorithm
-
-I think if we can think of a custom validation to add to Post I'm good with that but otherwise why not introduce another class to isolate the custom validation on
+Finally, add a custom validator to `Post` that ensures the title is
+sufficiently clickbait-y. If the title does not contain "Won't Believe",
+"Secret", "Top [number]", or "Guess", the validator should false.
