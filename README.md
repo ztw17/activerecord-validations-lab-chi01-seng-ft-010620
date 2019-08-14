@@ -21,7 +21,7 @@ Add validations to these models such that...
 
 Finally, add a custom validator to `Post` that ensures the title is sufficiently
 clickbait-y. If the title does not contain "Won't Believe", "Secret", "Top
-[number]", or "Guess", the validator should return false.
+[number]", or "Guess", the validator should add a validation error. Refer to the Rails guide on how to add an error.
 
 For future projects, it's a good idea to skim the list of available validation options.
 It will give you a sense of what's available and help with creating
