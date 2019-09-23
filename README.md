@@ -19,9 +19,11 @@ Add validations to these models such that...
 
 Finally, add a custom validator to `Post` that ensures the title is
 sufficiently clickbait-y. If the title does not contain "Won't Believe",
-"Secret", "Top [number]", or "Guess", the validator should add a validation
-error. Refer to the Rails guide on how to add an error.
+"Secret", "Top [number]", or "Guess", the validator should add a validation.
+
+Use the [Custom methods][cm] style of validator found in the Rails documentation.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/activerecord-validations-lab'>ActiveRecord Validations Lab</a> on Learn.co and start learning to code for free.</p>
 
 [ar_validations]: https://guides.rubyonrails.org/active_record_validations.html
+[cm]: https://guides.rubyonrails.org/active_record_validations.html#custom-methods
