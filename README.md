@@ -13,9 +13,7 @@ Add validations to these models such that...
 1. Post category is either `Fiction` or `Non-Fiction`
    This step requires an `inclusion` validator, which was not outlined in the
    README lesson. You'll need to refer to the [Rails guide][ar_validations] to
-   look up how to use it.
-   [ar_validations]: http://guides.rubyonrails.org/active_record_validations.html
-
+   look up how to use it [ar_validations][].
 
 # Custom Validations
 
@@ -28,3 +26,5 @@ It will give you a sense of what's available and help with creating
 validations for your own model objects.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/activerecord-validations-lab'>ActiveRecord Validations Lab</a> on Learn.co and start learning to code for free.</p>
+
+[ar_validations]: https://guides.rubyonrails.org/active_record_validations.html
